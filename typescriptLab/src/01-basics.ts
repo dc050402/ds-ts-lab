@@ -20,7 +20,6 @@ interface ColleagueHistory {
   former: Colleague[]
 }
 
-
 const friend1 = {
   name: "Jason Liu",
   phone: "087-12345",
