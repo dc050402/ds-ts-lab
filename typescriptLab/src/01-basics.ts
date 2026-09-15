@@ -15,6 +15,12 @@ const friend2 : Friend = {
   age: 31,
 };
 
+const friend3: Friend = {
+  name: "Paul Flemming",
+  phone: "086-12345",
+  age: 22
+};
+
 // const friends = [friend1, friend2];
 // //console.log(friends[1]);
 
@@ -53,7 +59,7 @@ const colleague3 = {
 
 // //console.log(colleagues.current[0]);
 
-export const friends = [friend1, friend2];
+export const friends = [friend1, friend2, friend3];
 
 export const colleagues = {
      current: [colleague1, colleague2, colleague3],
