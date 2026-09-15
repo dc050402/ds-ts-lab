@@ -46,7 +46,7 @@ const colleague3 = {
   },
 };
 
-// const colleagues : ColleagueHistory = {
+//  const colleagues : ColleagueHistory = {
 //   current: [colleague1, colleague2, colleague3],
 //   former: [],
 // };
@@ -55,5 +55,8 @@ const colleague3 = {
 
 export const friends = [friend1, friend2];
 
-export const colleagues = {colleague1, colleague2, colleague3};
+export const colleagues = {
+     current: [colleague1, colleague2, colleague3],
+     former: [],
+};
 
