@@ -12,3 +12,10 @@ export interface MenuItems {
         allergens : [];
     }
 }
+
+export interface ComboDeal {
+    id: number;
+    name: string;
+    items: [];
+    price: number;
+}

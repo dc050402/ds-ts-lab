@@ -6,7 +6,7 @@
 //     MenuItem) that describes it, and annotate each declaration with it.
 //     Note that 'nutrition' is a nested object, so it needs a nested type.
 
-import {MenuItems} from './menuType';
+import {MenuItems, ComboDeal} from './menuType';
 
 const soup = {
   id: 1,
