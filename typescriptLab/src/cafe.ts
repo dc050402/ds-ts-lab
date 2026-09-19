@@ -83,7 +83,7 @@ function describe(item: MenuItem) {
 // TS: An OrderLine is a union, so this function must *narrow* the type before
 //     it can touch the properties that only one member has. Use the 'in'
 //     operator - a ComboDeal has an 'items' property, a MenuItem does not.
-function lineTotal(line) {
+function lineTotal(line: OrderLine) {
   if ("items" in line) {
     return line.price; // Combos are sold at their bundle price.
   }

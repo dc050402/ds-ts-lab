@@ -1,6 +1,5 @@
 type Course = "starter" | "main" | "dessert";
 
-type OrderLine = MenuItem | ComboDeal;
 export interface MenuItem {
     id: number;
     name: string;
