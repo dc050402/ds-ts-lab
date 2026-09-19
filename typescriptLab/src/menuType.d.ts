@@ -1,6 +1,6 @@
-type Course = "starter" | "main" | "dessert";
+type Course = "starter" | "main" | "desert";
 
-export interface MenuItems {
+export interface MenuItem {
     id: number;
     name: string;
     course: Course;
@@ -16,6 +16,6 @@ export interface MenuItems {
 export interface ComboDeal {
     id: number;
     name: string;
-    items: [];
+    items: MenuItem[];
     price: number;
 }
