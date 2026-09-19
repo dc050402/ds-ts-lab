@@ -60,6 +60,9 @@ const lunchCombo : ComboDeal = {
   price: 10.0,
 };
 
+
+type OrderLine = MenuItem | ComboDeal;
+
 // TS: An order line is *either* a MenuItem or a ComboDeal. Declare a *type
 //     alias* for that union (e.g. OrderLine) and use it for the array below.
 const currentOrder: OrderLine[] = [risotto, lunchCombo, soup];
@@ -73,7 +76,7 @@ const currentOrder: OrderLine[] = [risotto, lunchCombo, soup];
 //     rely on *type inference* (check the inferred signature with VS Code's
 //     intellisense before you decide).
 
-function describe(item) {
+function describe(item: MenuItem) {
   return `${item.name} (${item.course}) - EUR ${item.price.toFixed(2)}`;
 }
 
