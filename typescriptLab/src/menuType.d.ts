@@ -6,10 +6,10 @@ export interface MenuItems {
     course: Course;
     price: number;
     discountPercent? : number;
-    availableFrom: Date;
+    availableFrom?: Date;
     nutrition: {
         calories : number;
-        allergens : [];
+        allergens : string[];
     }
 }
 

@@ -6,9 +6,9 @@
 //     MenuItem) that describes it, and annotate each declaration with it.
 //     Note that 'nutrition' is a nested object, so it needs a nested type.
 
-import {MenuItems, ComboDeal} from './menuType';
+import {MenuItem, ComboDeal} from './menuType';
 
-const soup = {
+const soup: MenuItem = {
   id: 1,
   name: "Roast Tomato Soup",
   course: "starter",
@@ -19,7 +19,7 @@ const soup = {
   },
 };
 
-const risotto = {
+const risotto : MenuItem = {
   id: 2,
   name: "Mushroom Risotto",
   // TS: 'course' should only ever be one of three values. Declare a *literal
@@ -34,7 +34,7 @@ const risotto = {
   },
 };
 
-const brownie = {
+const brownie: MenuItem = {
   id: 3,
   name: "Chocolate Brownie",
   course: "desert",
