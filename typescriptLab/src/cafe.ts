@@ -90,7 +90,7 @@ function lineTotal(line: OrderLine) {
   return line.price;
 }
 
-function orderTotal(lines) {
+function orderTotal(lines: OrderLine[]) {
   return lines.reduce((total, line) => total + lineTotal(line), 0);
 }
 
