@@ -53,7 +53,7 @@ const menu = [soup, risotto, brownie];
 
 // TS: A combo is a named bundle of menu items sold at a fixed price. Declare a
 //     second interface for it (ComboDeal: id, name, items, price).
-const lunchCombo = {
+const lunchCombo : ComboDeal = {
   id: 101,
   name: "Soup & Sweet",
   items: [soup, brownie],
@@ -62,7 +62,7 @@ const lunchCombo = {
 
 // TS: An order line is *either* a MenuItem or a ComboDeal. Declare a *type
 //     alias* for that union (e.g. OrderLine) and use it for the array below.
-const currentOrder = [risotto, lunchCombo, soup];
+const currentOrder: OrderLine[] = [risotto, lunchCombo, soup];
 
 // ---------------------------------------------------------------
 // 2. FUNCTIONS
