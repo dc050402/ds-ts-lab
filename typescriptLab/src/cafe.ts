@@ -137,7 +137,7 @@ function kitchenTicket(item: MenuItem): Readonly<Pick<MenuItem, "name" | "course
 // TS: An allergy card is a MenuItem without its nutrition property, but with a
 //     'warning' string added. Declare its type with Omit<> and an intersection
 //     (&) - see the EventPass example in the Utility Types section.
-function allergyCard(item) {
+function allergyCard(item: MenuItem): Omit<MenuItem, "nutrition"> & { warning: string} {
   return {
     id: item.id,
     name: item.name,
