@@ -120,7 +120,7 @@ function firstMatch<T>(data: T[], criteria: (d: T) => boolean): T | undefined {
 
 // TS: 'changes' holds *some* of a MenuItem's properties. Use the Partial<>
 //     *utility type* rather than declaring a new interface by hand.
-function updateItem(item, changes) {
+function updateItem(item: MenuItem, changes: Partial<MenuItem>): MenuItem {
   return { ...item, ...changes };
 }
 
