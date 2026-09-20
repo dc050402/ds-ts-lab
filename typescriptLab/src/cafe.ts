@@ -96,7 +96,7 @@ function orderTotal(lines: OrderLine[]) {
 
 // TS: 'predicate' is a callback - a *higher order function* parameter. Type it
 //     as a function signature: (item: MenuItem) => boolean.
-function filterMenu(items, predicate) {
+function filterMenu(items: MenuItem[], predicate: (item: MenuItem) => boolean): MenuItem[] {
   return items.filter(predicate);
 }
 
