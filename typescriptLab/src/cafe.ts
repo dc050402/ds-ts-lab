@@ -127,7 +127,7 @@ function updateItem(item: MenuItem, changes: Partial<MenuItem>): MenuItem {
 // TS: The kitchen ticket needs the name and course of an item, and nothing
 //     else - and it must not be modifiable once created. Declare its type by
 //     composing two utility types: Readonly<Pick<...>>.
-function kitchenTicket(item) {
+function kitchenTicket(item: MenuItem): Readonly<Pick<MenuItem, "name" | "course">> {
   return {
     name: item.name,
     course: item.course,
