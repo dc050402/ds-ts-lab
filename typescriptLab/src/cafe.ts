@@ -114,7 +114,7 @@ function cheapest(items: MenuItem[], max?: number): MenuItem[] {
 
 // TS: This function works on any array, not just menu items. Make it
 //     *generic*: <T>(data: T[], criteria: (d: T) => boolean) => T | undefined.
-function firstMatch(data, criteria) {
+function firstMatch<T>(data: T[], criteria: (d: T) => boolean): T | undefined {
   return data.find(criteria);
 }
 
