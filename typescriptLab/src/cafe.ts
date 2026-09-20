@@ -103,8 +103,12 @@ function filterMenu(items: MenuItem[], predicate: (item: MenuItem) => boolean): 
 // TS: 'max' should be an *optional parameter*: when omitted, return every
 //     match. Beware - the compiler will complain about comparing a possibly
 //     'undefined' value with a number, so handle that case explicitly.
-function cheapest(items, max) {
+function cheapest(items: MenuItem[], max?: number): MenuItem[] {
   const sorted = items.sort((a, b) => a.price - b.price);
+
+  if (max == undefined) {
+    return sorted;
+  }
   return sorted.slice(0, max);
 }
 
