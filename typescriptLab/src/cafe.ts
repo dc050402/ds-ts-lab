@@ -165,6 +165,8 @@ console.log(allergyCard(brownie));
 //     Readonly<> type. Leave it commented out with a note explaining why.
 // kitchenTicket(brownie).name = "Something else";
 
+//kitchenTicket returns a ReadOnly object, so the name is not able to be changed
+
 // TS: Three more lines below are bugs that only the compiler can see. Once
 //     your types are in place, fix each one and note it in your commit message.
 console.log(describe(lunchCombo.items[0]));
